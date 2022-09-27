@@ -2,5 +2,18 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    list = []
-    return list
+	list = []
+	currentNum = 2
+	
+	while len(list) < number_of_primes:
+		prime = True
+		for i in range(2, currentNum):
+			if currentNum % i == 0:
+				prime = False
+
+		if prime:
+			list.append(currentNum)
+		currentNum += 1
+			
+			
+	return list
